@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mudando o tamanho da imagem de fundo</title>
     <style>
         body{
             height: 100vh;
@@ -11,7 +11,15 @@
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
+            
+            /*background-size: 100%;*/ 
+            /*O background-size:100% n funciona muito bem pq se mexer na viewport a imagem as vezes não acompanha e n preenche a viewport toda. Se usar background-size: 100% 100%; a imagem pode ficar distorcida*/
+            
+            /*background-size: contain;*/ 
+            /*O background-size: contain dar a ordem para que 100% da imagem seja exibida, ou seja, ela n seja cortada, mas nem sempre a imagem acompanha a viewport*/
+
             background-size: cover;
+            /*O background-size: cover; faz com que a viewport seja totalmente preenchida, mas ela pode cortar a imagem de acordo com o tamanho da viewport*/
         }
         main{
             background-color: white;
