@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse; /*aproxima as bordas*/
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -21,6 +22,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;  
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         td,th{
             border: 1px solid black;
