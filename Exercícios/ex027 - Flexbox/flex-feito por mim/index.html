@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center; /*Deixa o conteiner no centro de cima para baixo*/
+            justify-content: center; /*Deixa no centro da esquerda para direita*/
+            width: 100vw; /*Talvez não seja necessário*/
+            height: 100vh;
+        }
+        div.container{
+            background-color: brown;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 300px;
+
+        }
+        div.item{
+            background-color: white;
+            border: 2px solid black;
+            margin: 5px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        div.item > p {
+            background-color: blueviolet;
+            margin: 15px 50px;
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><p>Caixa 1</p></div>
+        <div class="item"><p>Caixa 2</p></div>
+        <div class="item"><p>Caixa 3</p></div>
+        <div class="item"><p>Caixa 4</p></div>
+        <div class="item"><p>Caixa 5</p></div>
+        <div class="item"><p>Caixa 6</p></div>
+    </div>
+</body>
+</html>
