@@ -7,35 +7,57 @@
     <style>
         div.container{
             background-color: brown;
-            height: 400px;
             display: flex;
             flex-flow: row wrap;
-            align-content: space-between;
-
+            align-items: flex-start;
+            height: 400px;
         }
+
         div.item{
             background-color: white;
             border: 1px solid black;
             text-align: center;
-            padding: 40px;
+            padding: 20px;
+        }
+
+        div#i1{
+            
+        }
+
+        div#i2{
+            align-self: auto; /*Pode ser auto ou inherit que o resultado é o msm*/
+        }
+
+        div#i3{
+            align-self: flex-end;
+        }
+
+        div#i4{
+            
+        }
+
+        div#i5{
+            align-self: center;
+        }
+
+        div#i6{
+            align-self: flex-start;
+        }
+
+        div#i7{
+            align-self: stretch;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">Caixa 1</div>
-        <div class="item">Caixa 2</div>
-        <div class="item">Caixa 3</div>
-        <div class="item">Caixa 4</div>
-        <div class="item">Caixa 5</div>
-        <div class="item">Caixa 6</div>
-        <div class="item">Caixa 7</div>
-        <div class="item">Caixa 8</div>
-        <div class="item">Caixa 9</div>
-        <div class="item">Caixa 10</div>
-        <div class="item">Caixa 11</div>
-        <div class="item">Caixa 12</div>
-        <div class="item">Caixa 13</div>
+        <div class="item" id="i1">Caixa 1</div>
+        <div class="item" id="i2">Caixa 2</div>
+        <div class="item" id="i3">Caixa 3</div>
+        <div class="item" id="i4">Caixa 4</div>
+        <div class="item" id="i5">Caixa 5</div>
+        <div class="item" id="i6">Caixa 6</div>
+        <div class="item" id="i7">Caixa 7</div>
     </div>
 </body>
 </html>
